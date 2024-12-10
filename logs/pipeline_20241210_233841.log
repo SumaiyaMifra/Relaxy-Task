@@ -1,0 +1,19 @@
+2024-12-10 23:38:41,569 - __main__ - INFO - Starting ML pipeline...
+2024-12-10 23:38:41,569 - root - INFO - Created directory: artifacts
+2024-12-10 23:38:41,569 - root - INFO - Created directory: artifacts/ingested_data
+2024-12-10 23:38:41,569 - root - INFO - Created directory: artifacts/transformed_data
+2024-12-10 23:38:41,569 - root - INFO - Created directory: artifacts/models
+2024-12-10 23:38:41,569 - root - INFO - Created directory: logs
+2024-12-10 23:38:41,569 - __main__ - INFO - Step 1: Data Ingestion
+2024-12-10 23:38:41,670 - __main__ - INFO - Data ingestion completed. Data saved to artifacts/ingested_data
+2024-12-10 23:38:41,670 - __main__ - INFO - Step 2: Data Transformation
+2024-12-10 23:38:41,864 - __main__ - INFO - Data transformation completed. Data saved to artifacts/transformed_data
+2024-12-10 23:38:41,864 - __main__ - INFO - Step 3: Model Training and Evaluation
+2024-12-10 23:38:55,359 - __main__ - INFO - Model evaluation results saved to artifacts/models\model_evaluation_results.csv
+2024-12-10 23:38:55,379 - __main__ - INFO - Best performing model: Random Forest (F1 Score: 0.9991)
+2024-12-10 23:38:55,388 - root - INFO - Pipeline summary saved to artifacts/pipeline_summary_20241210_233855.csv
+2024-12-10 23:38:55,388 - __main__ - ERROR - Error in ML pipeline: 'ModelTrainer' object has no attribute 'get_model'
+Traceback (most recent call last):
+  File "C:\Users\mifth\OneDrive\Desktop\p\relaxy-ai-engineer-exam-question\src\main.py", line 110, in main
+    best_model_instance = model_trainer.get_model(best_model)
+AttributeError: 'ModelTrainer' object has no attribute 'get_model'
